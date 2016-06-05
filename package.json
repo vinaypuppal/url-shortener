@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/vinaypuppal/url-shortener/issues"
   },
-  "homepage": "https://github.com/vinaypuppal/url-shortener"
+  "homepage": "https://github.com/vinaypuppal/url-shortener",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongodb": "^2.1.21",
+    "morgan": "^1.7.0",
+    "nodemon": "^1.9.2"
+  }
 }
