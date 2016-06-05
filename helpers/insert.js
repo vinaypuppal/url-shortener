@@ -39,7 +39,8 @@ module.exports = function (url,req,res) {
 	    			 	var obj = {
 	    			 		original_url: url,
 	    			 		short_url: req.protocol + '://' + req.get('Host')+'/'+data,
-	    			 		url_id:data
+	    			 		url_id:data,
+	    			 		createdAt: new Date
 	    			 	};
 	    			 	db.collection('url').insert(obj).then(function(data){
 	    			 		if(data.ops) res.send({
