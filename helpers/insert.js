@@ -2,7 +2,7 @@ var mongodb = require('mongodb');
 
 var MongoClient = mongodb.MongoClient;
 
-var mongo_url =  "mongodb://localhost:27017/test";
+var mongo_url =  process.env.MONGOLAB_URI || "mongodb://localhost:27017/test";
 
 module.exports = function (url,req,res) {
 	MongoClient.connect(mongo_url, function (err, db) {
