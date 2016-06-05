@@ -19,7 +19,7 @@ http://vp-shorturl.com/new/http://www.google.com
 ```javascript
 	{
 	original_url: "http://www.google.com/",
-	short_url: "http://localhost:3000/1"
+	short_url: "http://vp-shorturl.com/1"
 	}
 	
 ```
