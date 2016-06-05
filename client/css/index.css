@@ -1,3 +1,45 @@
-h1{
+nav .brand-logo{
+	font-size: 20px;
+    margin-left: 20px;
+}
+
+i.left{
+	font-size: x-large;
+}
+
+.container{
 	color: #888;
+}
+
+blockquote,.card{
+	line-height: 2;
+	border-left-color: #00bfa5;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating){
+	color: #00bfa5;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover{
+	color: #64ffda;
+}
+
+pre{
+	margin: 5px;
+}
+
+.row{
+	margin-bottom: 0;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.mt-20{
+	margin-top: 15px
+}
+
+@-ms-viewport{
+  width: device-width;
 }

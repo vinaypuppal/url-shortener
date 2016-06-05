@@ -3,6 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Url Shortener Microservice</title>
+	<meta description="API Basejump: Url Shortener Microservice(Freecodecamp Project)">
+	<!-- FACEBOOK -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Url Shortener Microservice(Freecodecamp Project)">
+	<meta property="og:url" content="https://vp-shorturl.herokuapp.com">
+	<meta property="og:image" content="https://res.cloudinary.com/vinaypuppal/image/upload/c_scale,w_1024/v1465124936/fcc/ui-url-shortener.png">
+	<meta property="og:site_name" content="Url Shortener Microservice">
+	<meta property="og:description" content="API Basejump: Url Shortener Microservice(Freecodecamp Project)">
+	<!-- TWITTER -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@vinaypuppal">
+	<meta name="twitter:title" content="Url Shortener Microservice(Freecodecamp Project)">
+	<meta name="twitter:description" content="API Basejump: Url Shortener Microservice(Freecodecamp Project)">
+	<meta name="twitter:image:src" content="https://res.cloudinary.com/vinaypuppal/image/upload/c_scale,w_1024/v1465124936/fcc/ui-url-shortener.png">
+	<!-- mobile viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/index.css">
@@ -10,6 +26,65 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-	<h1>Hello World</h1>
+	<nav class='teal accent-4'>
+	    <div class="nav-wrapper">
+	      <a href="/" class="brand-logo">URL Shortener Microservice(<small>Freecodecamp Project</small>)</a>
+	      <ul class="right hide-on-med-and-down">
+	      <li><a href="https://github.com/vinaypuppal/url-shortener" target="_blank"><i class="fa fa-github left"></i>View Source Code</a></li>
+	      </ul>
+	    </div>
+	</nav>
+	    <main class="container">
+	    	<h3>API Basejump: URL Shortener Microservice</h1>
+	    	<h4>User stories:</h4>
+	    	<blockquote>
+	    		 I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.
+	    	</blockquote>
+	    	<blockquote>
+	    		If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.
+	    	</blockquote>
+	    	<blockquote>
+	    		When I visit that shortened URL, it will redirect me to my original link.
+	    	</blockquote>
+	    	<div class="row">
+	    		<div class="col s12 m6 mt-20">
+	    			<div class="card">
+	    				<div class="card-content">
+	    					<span class="card-title">Example Usage:</span>
+	    					<p id="original-link">
+	    						<!-- main.js adds natural link url here -->
+	    					</p>
+	    				</div>
+	    				<div id="try-it" class="card-action">
+							<!-- main.js adds links here -->
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="col s12 m6">
+	    			<div class="card">
+	    				<div class="card-content">
+	    					<span class="card-title">Example Output:</span>    						
+<pre>
+{
+original_url: "http://www.google.com/",
+short_url: "http://localhost:3000/1"
+}
+</pre>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </main>
+		<div class="page-footer">
+			<div class="footer-copyright text-center">
+	            <div class="container">
+	             Made with <i class="fa fa-heart-o"></i> By <a href="https://vinaypuppal.com" target="_blank">VinayPuppal</a> © 2016
+	            </div>
+	          </div>
+		</div>
+			<!-- Compiled and minified JavaScript -->
+			<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js'></script>
+		  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+		  	<script src='js/index.js'></script>
 </body>
 </html>
